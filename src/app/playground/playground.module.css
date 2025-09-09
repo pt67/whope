@@ -1,0 +1,83 @@
+.playground {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #87CEEB 0%, #1a1c2c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.helicopter {
+  position: absolute;
+  font-size: 3rem;
+  transform: translateX(-50%);
+  transition: left 0.05s linear;
+}
+
+.bomb {
+  position: absolute;
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+}
+
+.village {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+}
+
+.net {
+  position: absolute;
+  bottom: 100px;
+  font-size: 2rem;
+  transform: translateX(-50%);
+  transition: left 0.1s ease;
+  user-select: none;
+}
+
+.gameInfo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.score {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.gameOver {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.gameOver h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gameOver button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  background: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.gameOver button:hover {
+  background: #45a049;
+}
